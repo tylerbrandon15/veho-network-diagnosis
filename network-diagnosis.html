@@ -122,7 +122,7 @@ footer{padding:32px 0 56px;color:var(--ink3);font-size:11.5px;border-top:1px sol
 @media(max-width:900px){.cards,.stats{grid-template-columns:1fr}.limits{grid-template-columns:1fr 1fr}h1{font-size:36px}}
 
 /* stacked origin bars */
-.srow{display:grid;grid-template-columns:78px 1fr 58px;align-items:center;gap:12px;margin:7px 0}
+.srow{display:grid;grid-template-columns:78px 1fr 62px;align-items:center;gap:12px;margin:7px 0}
 .srow .sk{font-size:12px;color:var(--ink2);font-weight:500}
 .srow .strack{display:flex;height:16px;border-radius:4px;overflow:hidden;background:var(--cream-deep)}
 .srow .sseg{display:block;height:16px}
@@ -162,22 +162,22 @@ footer{padding:32px 0 56px;color:var(--ink3);font-size:11.5px;border-top:1px sol
   </div>
 
   <section>
-    <div class="sec-h"><h2>Where the network <em>loses</em> on-time</h2><span class="sec-note">Missed packages per 10,000, by where the miss originated.</span></div>
+    <div class="sec-h"><h2>Where the network <em>loses</em> on-time</h2><span class="sec-note">On-time percentage points lost, by cause. Bars sum to 100% minus each market's on-time.</span></div>
     <div class="panel" style="padding:24px 26px">
       <div class="legend">
         <span><i style="background:#E8462A"></i>Upstream — middle-mile delay &amp; missort</span>
         <span><i style="background:#1C1B19"></i>Drivers quitting routes</span>
         <span><i style="background:#BDB8AE"></i>In-building — stow, scan, sort</span>
       </div>
-      <div class="srow"><span class="sk">Market E</span><span class="strack"><span class="sseg up" style="width:12.79%"></span><span class="sseg qt" style="width:5.64%"></span><span class="sseg bd" style="width:2.79%"></span></span><span class="sv">297</span></div>
-          <div class="srow"><span class="sk">Market F</span><span class="strack"><span class="sseg up" style="width:11.50%"></span><span class="sseg qt" style="width:9.64%"></span><span class="sseg bd" style="width:7.14%"></span></span><span class="sv">396</span></div>
-          <div class="srow"><span class="sk">Market B</span><span class="strack"><span class="sseg up" style="width:21.14%"></span><span class="sseg qt" style="width:3.43%"></span><span class="sseg bd" style="width:4.36%"></span></span><span class="sv">405</span></div>
-          <div class="srow"><span class="sk">Market A</span><span class="strack"><span class="sseg up" style="width:20.00%"></span><span class="sseg qt" style="width:11.00%"></span><span class="sseg bd" style="width:7.14%"></span></span><span class="sv">534</span></div>
-          <div class="srow"><span class="sk">Market H</span><span class="strack"><span class="sseg up" style="width:18.29%"></span><span class="sseg qt" style="width:12.07%"></span><span class="sseg bd" style="width:7.86%"></span></span><span class="sv">535</span></div>
-          <div class="srow"><span class="sk">Market C</span><span class="strack"><span class="sseg up" style="width:17.07%"></span><span class="sseg qt" style="width:16.86%"></span><span class="sseg bd" style="width:9.93%"></span></span><span class="sv">614</span></div>
-          <div class="srow hi"><span class="sk">Market D</span><span class="strack"><span class="sseg up" style="width:19.50%"></span><span class="sseg qt" style="width:51.14%"></span><span class="sseg bd" style="width:7.14%"></span></span><span class="sv">1,089</span></div>
-          <div class="srow hi"><span class="sk">Market G</span><span class="strack"><span class="sseg up" style="width:75.29%"></span><span class="sseg qt" style="width:11.21%"></span><span class="sseg bd" style="width:6.43%"></span></span><span class="sv">1,301</span></div>
-      <div class="chart-c" style="margin-top:14px">D and G are the two worst markets and they share almost nothing. <b>D's loss is drivers walking off routes; G's is freight that never arrived.</b> The same corrective action cannot fix both.</div>
+      <div class="srow"><span class="sk">Market E</span><span class="strack"><span class="sseg up" style="width:12.79%"></span><span class="sseg qt" style="width:5.64%"></span><span class="sseg bd" style="width:2.79%"></span></span><span class="sv">3.0 pts</span></div>
+          <div class="srow"><span class="sk">Market F</span><span class="strack"><span class="sseg up" style="width:11.50%"></span><span class="sseg qt" style="width:9.64%"></span><span class="sseg bd" style="width:7.14%"></span></span><span class="sv">4.0 pts</span></div>
+          <div class="srow"><span class="sk">Market B</span><span class="strack"><span class="sseg up" style="width:21.14%"></span><span class="sseg qt" style="width:3.43%"></span><span class="sseg bd" style="width:4.36%"></span></span><span class="sv">4.0 pts</span></div>
+          <div class="srow"><span class="sk">Market A</span><span class="strack"><span class="sseg up" style="width:20.00%"></span><span class="sseg qt" style="width:11.00%"></span><span class="sseg bd" style="width:7.14%"></span></span><span class="sv">5.3 pts</span></div>
+          <div class="srow"><span class="sk">Market H</span><span class="strack"><span class="sseg up" style="width:18.29%"></span><span class="sseg qt" style="width:12.07%"></span><span class="sseg bd" style="width:7.86%"></span></span><span class="sv">5.3 pts</span></div>
+          <div class="srow"><span class="sk">Market C</span><span class="strack"><span class="sseg up" style="width:17.07%"></span><span class="sseg qt" style="width:16.86%"></span><span class="sseg bd" style="width:9.93%"></span></span><span class="sv">6.1 pts</span></div>
+          <div class="srow hi"><span class="sk">Market D</span><span class="strack"><span class="sseg up" style="width:19.50%"></span><span class="sseg qt" style="width:51.14%"></span><span class="sseg bd" style="width:7.14%"></span></span><span class="sv">10.9 pts</span></div>
+          <div class="srow hi"><span class="sk">Market G</span><span class="strack"><span class="sseg up" style="width:75.29%"></span><span class="sseg qt" style="width:11.21%"></span><span class="sseg bd" style="width:6.43%"></span></span><span class="sv">13.0 pts</span></div>
+      <div class="chart-c" style="margin-top:14px">G gives up <b>13.0 points of on-time, and 10.5 of them are freight that arrived late</b>. D gives up 10.9, and 7.2 are drivers walking off routes. The two worst markets share almost nothing — the same corrective action cannot fix both.</div>
     </div>
   </section>
 
@@ -186,21 +186,21 @@ footer{padding:32px 0 56px;color:var(--ink3);font-size:11.5px;border-top:1px sol
     <div class="panel">
       <table>
         <thead><tr>
-          <th>Market</th><th>Site</th><th>On&#8209;time</th><th>On&#8209;time<br>launch</th><th>Driver<br>wait</th><th>Routes quit<br>/10k</th><th>Handling err<br>/10k</th><th>Freight<br>on time</th><th>UPH</th><th>Rework<br>hrs</th>
+          <th>Market</th><th>Site</th><th>On&#8209;time</th><th>On&#8209;time<br>launch</th><th>Driver<br>wait</th><th>Routes<br>abandoned</th><th>Handling<br>misses /10k</th><th>Freight<br>on time</th><th>UPH</th><th>Rework<br>hrs</th>
         </tr></thead>
         <tbody>
-          <tr class="scale"><td class="mkt">Market E</td><td><span class="tag">Veho</span></td><td class="gd">97.0%</td><td>88%</td><td>8 min</td><td>79</td><td class="gd">37</td><td>95%</td><td>97.2</td><td>13.0%</td></tr>
-          <tr><td class="mkt">Market F</td><td><span class="tag">Veho</span></td><td>96.0%</td><td>93%</td><td>12 min</td><td>135</td><td>92</td><td>95%</td><td>90.1</td><td>14.8%</td></tr>
-          <tr class="scale"><td class="mkt">Market B</td><td><span class="tag">Veho</span></td><td>96.0%</td><td class="gd">100%</td><td>10 min</td><td class="gd">48</td><td>55</td><td>95%</td><td class="gd">99.7</td><td>13.7%</td></tr>
-          <tr><td class="mkt">Market A</td><td><span class="tag">Veho</span></td><td>94.7%</td><td>93%</td><td>13 min</td><td>154</td><td>92</td><td>94%</td><td>88.1</td><td>13.9%</td></tr>
-          <tr><td class="mkt">Market H</td><td><span class="tag">Veho</span></td><td>94.6%</td><td>90%</td><td>12 min</td><td>169</td><td>101</td><td>93%</td><td>85.5</td><td>13.4%</td></tr>
-          <tr><td class="mkt">Market C</td><td><span class="tag p3">3PL</span></td><td>93.8%</td><td>86%</td><td>17 min</td><td>236</td><td class="bad">129</td><td>94%</td><td>85.4</td><td>14.0%</td></tr>
-          <tr class="risk"><td class="mkt">Market D</td><td><span class="tag p3">3PL</span></td><td class="bad">89.1%</td><td class="bad">48%</td><td class="bad">40 min</td><td class="bad">716</td><td>92</td><td>93%</td><td class="bad">81.2</td><td class="bad">27.0%</td></tr>
-          <tr class="risk"><td class="mkt">Market G</td><td><span class="tag p3">3PL</span></td><td class="bad">87.0%</td><td>98%</td><td>12 min</td><td>157</td><td>83</td><td class="bad">79%</td><td>85.9</td><td>14.4%</td></tr>
+          <tr class="scale"><td class="mkt">Market E</td><td><span class="tag">Veho</span></td><td class="gd">97.0%</td><td>88%</td><td>8 min</td><td>1.17%</td><td class="gd">37</td><td>95%</td><td>97.2</td><td>13.0%</td></tr>
+          <tr><td class="mkt">Market F</td><td><span class="tag">Veho</span></td><td>96.0%</td><td>93%</td><td>12 min</td><td>1.98%</td><td>92</td><td>95%</td><td>90.1</td><td>14.8%</td></tr>
+          <tr class="scale"><td class="mkt">Market B</td><td><span class="tag">Veho</span></td><td>96.0%</td><td class="gd">100%</td><td>10 min</td><td class="gd">0.71%</td><td>55</td><td>95%</td><td class="gd">99.7</td><td>13.7%</td></tr>
+          <tr><td class="mkt">Market A</td><td><span class="tag">Veho</span></td><td>94.7%</td><td>93%</td><td>13 min</td><td>2.16%</td><td>92</td><td>94%</td><td>88.1</td><td>13.9%</td></tr>
+          <tr><td class="mkt">Market H</td><td><span class="tag">Veho</span></td><td>94.6%</td><td>90%</td><td>12 min</td><td>2.35%</td><td>101</td><td>93%</td><td>85.5</td><td>13.4%</td></tr>
+          <tr><td class="mkt">Market C</td><td><span class="tag p3">3PL</span></td><td>93.8%</td><td>86%</td><td>17 min</td><td>3.39%</td><td class="bad">129</td><td>94%</td><td>85.4</td><td>14.0%</td></tr>
+          <tr class="risk"><td class="mkt">Market D</td><td><span class="tag p3">3PL</span></td><td class="bad">89.1%</td><td class="bad">48%</td><td class="bad">40 min</td><td class="bad">9.81%</td><td>92</td><td>93%</td><td class="bad">81.2</td><td class="bad">27.0%</td></tr>
+          <tr class="risk"><td class="mkt">Market G</td><td><span class="tag p3">3PL</span></td><td class="bad">87.0%</td><td>98%</td><td>12 min</td><td>2.27%</td><td>83</td><td class="bad">79%</td><td>85.9</td><td>14.4%</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="note">Per 10,000 packages. Driver wait = median check-in to first load scan. Freight on time = inbound trips landing at or before plan.</p>
+    <p class="note"><b>Routes abandoned</b> = share of dispatched routes a driver accepted, left, then dropped. <b>Handling misses /10k</b> = packages per 10,000 that missed SLA from a stow, scan or sort defect — a rate, so a 7,500-package market and an 18,000-package market are comparable. <b>Driver wait</b> = median check-in to first load scan. <b>Freight on time</b> = inbound trips landing at or before plan.</p>
   </section>
 
   <section>
@@ -232,7 +232,7 @@ footer{padding:32px 0 56px;color:var(--ink3);font-size:11.5px;border-top:1px sol
         <div class="legend" style="margin:2px 0 0;font-size:11px"><span><i style="background:#E8462A"></i>Driver wait — 26 → 57 min</span><span><i style="background:#1C1B19"></i>Routes abandoned — 5.6% → 12.2%</span></div>
         <div class="chart-c">Six consecutive weeks, unflagged by a monthly look-back. <b>D is the top risk because of the slope, not the level.</b></div>
 
-        <div class="metric" style="margin-top:16px"><span class="lab">Misses from drivers quitting</span><span class="val r">66% <span class="vs">of D's total</span></span></div>
+        <div class="metric" style="margin-top:16px"><span class="lab">On-time points lost to quitting</span><span class="val r">7.2 pts <span class="vs">66% of D's misses</span></span></div>
         <div class="metric"><span class="lab">Launch pushed</span><span class="val r">22 of 42 days <span class="vs">worst by far</span></span></div>
         <div class="metric"><span class="lab">Hours on rework</span><span class="val r">27.0% <span class="vs">vs a 13–15% band</span></span></div>
 
@@ -317,8 +317,8 @@ footer{padding:32px 0 56px;color:var(--ink3);font-size:11.5px;border-top:1px sol
         <div class="brow"><span class="k" style="color:var(--red)">Market D</span><span class="track"><span class="fill red" style="width:100%"></span></span><span class="v" style="color:var(--red)">68m</span></div>
         <div class="chart-c" style="margin-top:10px">B's <i>worst</i> day beats every other market's worst. Its slow day sits only <b>4.5 min above its own median</b> — the tightest spread in the network.</div>
 
-        <div class="metric" style="margin-top:16px"><span class="lab">Routes quit /10k</span><span class="val g">48 <span class="vs">vs 155 median</span></span></div>
-        <div class="metric"><span class="lab">Routes abandoned</span><span class="val g">0.7% <span class="vs">vs D's 9.8%</span></span></div>
+        <div class="metric" style="margin-top:16px"><span class="lab">Routes abandoned</span><span class="val g">0.71% <span class="vs">vs 2.2% median, D's 9.8%</span></span></div>
+        <div class="metric"><span class="lab">On-time points lost to quitting</span><span class="val g">0.48 <span class="vs">lowest in network</span></span></div>
         <div class="metric"><span class="lab">Units per hour</span><span class="val g">99.7 <span class="vs">best in network</span></span></div>
 
         <div class="read g" style="margin-top:16px"><b>Fewest bad days — not fastest median.</b> That is a sequence, and a sequence is copyable.</div>
@@ -327,7 +327,7 @@ footer{padding:32px 0 56px;color:var(--ink3);font-size:11.5px;border-top:1px sol
 
       <div class="card scale">
         <h3>Market <b>E</b> — quality as a labor argument</h3>
-        <div class="hl"><span class="big g">37</span><span class="cap">handling errors /10k — the <b>network median is 92</b></span></div>
+        <div class="hl"><span class="big g">37</span><span class="cap">of every 10,000 packages hit a handling defect — the <b>network median is 92</b></span></div>
 
         <div class="chart-t" style="margin-top:6px">Handling errors /10k, week by week</div>
         <svg viewBox="0 0 420 124" width="100%" height="124" role="img" aria-label="Market E handling errors flat at 36 to 37 per 10k while the network median sits at 92">
@@ -339,7 +339,7 @@ footer{padding:32px 0 56px;color:var(--ink3);font-size:11.5px;border-top:1px sol
           <circle cx="46" cy="102" r="3.5" fill="#1F7A5A"/><circle cx="118" cy="101" r="3.5" fill="#1F7A5A"/><circle cx="190" cy="102" r="3.5" fill="#1F7A5A"/><circle cx="262" cy="101" r="3.5" fill="#1F7A5A"/><circle cx="334" cy="102" r="3.5" fill="#1F7A5A"/><circle cx="400" cy="101" r="4.5" fill="#1F7A5A"/>
           <text class="lbl" x="200" y="117" style="fill:#1F7A5A;font-weight:600">Market E — 36 to 37, every week</text>
         </svg>
-        <div class="chart-c">Less than half the network median, and it does not move. <b>A flat line is a process; a good month is luck.</b></div>
+        <div class="chart-c">Under half the network median, and it does not move. <b>A flat line is a process; a good month is luck.</b></div>
 
         <div class="metric" style="margin-top:16px"><span class="lab">Hours on rework</span><span class="val g">13.0% <span class="vs">lowest in network</span></span></div>
         <div class="metric"><span class="lab">Units per hour</span><span class="val g">97.2 <span class="vs">2nd best</span></span></div>
